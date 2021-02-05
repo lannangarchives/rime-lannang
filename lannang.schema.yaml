@@ -1,11 +1,10 @@
 # Rime schema
 # encoding: utf-8
-
 # not final, remove when done
 
 schema:
   schema_id: lannang
-  name: 菲律賓閩南語咱人話
+  name: Lannangoe (Philippine Hokkien)
   version: "0.1"
   author:
     - The Lannang Archives <lannangarchives@gmail.com>
@@ -17,14 +16,14 @@ schema:
     grammatical (sub)systems.
 
     The Lannang Archives
-    http://lannangarchives.org
+    <http://lannangarchives.org>
   dependencies:
     - luna_pinyin
 
 switches:
   - name: ascii_mode
     reset: 0
-    states: [ 中文, 西文 ]
+    states: [ Lannangdi, Latin ]
   - name: full_shape
     states: [ 半角, 全角 ]
   - name: simplification
@@ -45,18 +44,17 @@ engine:
   segmentors:
     - ascii_segmentor
     - matcher
-    - affix_segmentor@luna_pinyin
     - abc_segmentor
     - punct_segmentor
     - fallback_segmentor
   translators:
+    - echo_translator
     - punct_translator
-    - script_translator
-    - script_translator@luna_pinyin
+    - r10n_translator
+    - reverse_lookup_translator
   filters:
     - simplifier
     - uniquifier
-    - reverse_lookup_filter@reverse_lookup
 
 speller:
   alphabet: 'zyxwvutsrqponmlkjihgfedcba~[/\]90-;'
@@ -104,7 +102,7 @@ speller:
     - 'xlit 12345678 [/\]90-;'
 
 translator:
-  dictionary: banlam
+  dictionary: lannang
   preedit_format:
     - 'xform ([aeiou])(r?m?n*h?g?p?t?k?)([\[/\\\]90\-;]) $1$3$2'
     - 'xform ([aeo])([iueo])([\[/\\\]90\-;]) $1$3$2'
@@ -202,4 +200,4 @@ recognizer:
   import_preset: default
   patterns:
     punct: "^/([0-9]0?|[a-z]+)$"
-    luna_pinyin: "`[a-z]*'?$"
+    reverse_lookup: "`[a-z]*'?$"
