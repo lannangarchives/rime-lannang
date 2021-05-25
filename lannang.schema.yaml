@@ -23,7 +23,7 @@ schema:
 switches:
   - name: ascii_mode
     reset: 0
-    states: [ Lannangdi, Latin ]
+    states: [ Chinese, Latin ]
   - name: full_shape
     states: [ 半角, 全角 ]
   - name: simplification
@@ -62,16 +62,17 @@ speller:
   delimiter: " '"
   algebra:
     - abbrev/^([ptkbgmlsch]h?).+$/$1/ 
-    - derive/^c/ts/
+    - derive/^c/ts/ch #ch for lannang
     - derive/uih/ueh/
     - derive/^j/l/
+    - derive/^l/d/ #lannang
     - derive/Ia/io/
     - derive/ee/e/
     - derive/enn/inn/
     - derive/^([mn]g?)ee/$1i/
     - derive/ur/ir/
     - derive/Er/er/
-    - derive/ere/ue/
+    - derive/ere/e/ue/ #lannang lan nang 
     - derive/uIn?n?/ng/
     - derive/uainn/uinn/
     - derive/uAinn/uinn/
@@ -88,7 +89,7 @@ speller:
     - derive/ik/iak/		#市區、海口
     #- derive/erng/ng/		#市區、海口
     #- derive/7/3/		#陰陽去本調
-    #- derive/ir/i/		#海口腔
+    - derive/ir/i/		#海口腔， lannang
     #- derive/er(h?)(.)/e$1$2/		#海口腔
     #- derive/6/1/		#海口腔
     #- derive/iO/er/		#永春
@@ -165,28 +166,10 @@ translator:
     - 'xform c ts'
     - 'xform q h'
 
-# from jyupting schema, do not deploy to production, only for testing purposes
-# luna_pinyin:
-#   tag: luna_pinyin
-#   dictionary: luna_pinyin
-#   enable_user_dict: false
-#   prefix: "`"
-#   suffix: ";"
-#   tips: 〔Pinyin〕
-#   preedit_format:
-#     - xform/([nl])v/$1ü/
-#     - xform/([nl])ue/$1üe/
-#     - xform/([jqxy])v/$1u/
-
-# reverse_lookup:
-#   tags:  [luna_pinyin]
-#   overwrite_comment: false
-#   dictionary: lannang
-
 reverse_lookup:
   dictionary: luna_pinyin
   prefix: "`"
-  tips: 〔拼音〕
+  tips: 〔Reverse Mandarin Pinyin Lookup〕
   preedit_format:
     - xform/([nljqxy])v/$1ü/
 
