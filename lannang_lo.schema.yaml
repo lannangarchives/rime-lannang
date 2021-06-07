@@ -98,6 +98,8 @@ speller:
     #- derive/^ji/gi/		#日母字讀g，比論字讀gi
     - derive/^j/d/ #lannang
     - derive/^l/d/ #lannang
+    - derive/enn/inn/ #lannang 病 penn > pinn "sickness"
+    - derive/oo/o/ # lannang 五 goo > go "five" 
     - derive/^([a-z]+)\d$/$1/
     - 'xlit 12345678 [/\]90-;'
 
