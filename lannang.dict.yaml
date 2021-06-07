@@ -5,15 +5,18 @@
 name: lannang
 version: "0.1"
 sort: by_weight
-use_preset_vocabulary: false
+use_preset_vocabulary: true
+import_tables:
+  - banlam.copy
 ...
 
 野媠
-咱儂	lan nang
-咱人	lan nang	100%
-人	lang  100%
-宿霧
-宿務
+咱儂	lan2 nang22
+咱人	lan2 nang22	1
+咱人話	lan2 nang3 ue44	1
+人	lang22	10
+宿霧	sok3 bu44	2
+宿務	sok3 bu44	1
 ba	ba	#Philippine
 嗎	ba	#漢字
 𪜶	in
