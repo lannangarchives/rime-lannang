@@ -83,8 +83,8 @@ speller:
     - derive/er([^eptkmng]*)(h?)$/e$1$2/		#偏泉腔，過讀ke
     - derive/Er/e/
     - derive/Er/er/		#鹿港
-    - derive/ere/e/		#偏漳腔，雞讀ke
-    - derive/ere/ue/		#偏泉腔，雞讀kue
+    - derive/ere/e/		#偏漳腔，雞讀ke; also lannang
+    - derive/ere/ue/		#偏泉腔，雞讀kue; also lannang
     - derive/uIn?n?/ng/
     - derive/uAinn/uan/
     - derive/iO/oo/
@@ -97,10 +97,13 @@ speller:
     - derive/ern/in/
     - derive/ern(\d?\s?)/un$1/
     - derive/ern/irn/
+    - derive/ern/ien/
+    - derive/ern/iun/
     - derive/erm/im/
     #- derive/^ji/gi/		#日母字讀g，比論字讀gi
     - derive/^j/d/ #lannang
     - derive/^l/d/ #lannang
+    - derive/^ju/lu/ #lannang
     - derive/enn/inn/ #lannang 病 penn > pinn "sickness"
     - derive/oo/o/ # lannang 五 goo > go "five" 
     - derive/^([a-z]+)\d$/$1/
