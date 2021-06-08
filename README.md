@@ -1,7 +1,7 @@
 # rime-lannang
 Rime recipe for Philippine Hokkien.
 This is an input method for Philippine Hokkien Chinese characters.
-This requires a RIME client for your platform (https://rime.im/ (Chinese))
+This requires a (RIME client for your platform)[https://rime.im/] (Chinese).
 
 ## Current version notes
 The current ```lannang.dict.yaml``` is an ongoing edited version of a-thok's dictionary from [```rime-hokkien```](https://github.com/a-thok/rime-hokkien). Therefore, a lot of romanizations that appear in the input box comments will not be recognizable in any of the popular romanization schemes (Pe̍h-ōe-jī, Tâi-lô, Lannang Orthography*, Hui-di*).<br><br>
