@@ -5,7 +5,7 @@
 
 schema:
   schema_id: lannang_lo
-  name: 咱人話-LO（Lánnang-uè, Lannang Orthography）
+  name: 閩南語咱人話-LO（Lánnang-uè, Lannang Orthography）
   version: "0.1"
   author:
     - The Lannang Archives <lannangarchives@gmail.com>
