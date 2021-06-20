@@ -10,4 +10,8 @@ We aim to revamp the entire dictionary to suit words, pronunciations, and phrase
 <br>
 \**these are recently created romanization schemes made in the Philippines but, however, are not popular as of recent. Creation date ranges from 2019-2020.*
 ## Status
-For the ongoing status of this project, please refer to the [project board](https://github.com/lannangarchives/rime-lannang/projects/1).
+For the overall status of this project, please refer to the [project board](https://github.com/lannangarchives/rime-lannang/projects/1).
+### Milestones
+- [ ] Toneless typing w/o romanization comments
+- [ ] Testing for aforementioned
+- [ ] Toned typing w/ proper romanization comments
